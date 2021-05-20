@@ -13,7 +13,8 @@ func whatTimeIsIt(funcTime func() time.Time) string {
 func main() {
 
 	timeNow := whatTimeIsIt(time.Now)
-
 	fmt.Print(timeNow)
+
+	time.Now()
 
 }
