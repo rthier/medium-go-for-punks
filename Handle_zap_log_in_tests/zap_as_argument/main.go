@@ -6,12 +6,8 @@ import (
 
 func main() {
 
-	logger := newLogger()
+	logger := zap.NewExample()
 	myFunction(logger)
-}
-
-func newLogger() *zap.Logger {
-	return zap.NewExample()
 }
 
 func myFunction(logger *zap.Logger) {

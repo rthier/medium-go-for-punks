@@ -6,8 +6,12 @@ import (
 
 func main() {
 
-	logger := zap.NewExample().Sugar()
+	logger := newLogger()
 	myFunction(logger)
+}
+
+func newLogger() *zap.SugaredLogger {
+	return zap.NewExample().Sugar()
 }
 
 func myFunction(logger *zap.SugaredLogger) {
